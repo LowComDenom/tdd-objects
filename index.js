@@ -200,6 +200,7 @@ export function zip(keys, values) {
  */
 export function countCharacters(word) {
   let lc = {};
+  // had a fun time learning what "in" does
   for (const l of word) {
     if (l in lc) lc[l]++;
     else lc[l] = 1;
